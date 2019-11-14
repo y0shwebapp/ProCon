@@ -1,0 +1,7 @@
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\obj\Debug\Paiza_.csprojResolveAssemblyReference.cache
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\obj\Debug\Paiza_.csproj.CoreCompileInputs.cache
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\bin\Debug\Paiza_.exe.config
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\bin\Debug\Paiza_.exe
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\bin\Debug\Paiza_.pdb
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\obj\Debug\Paiza_.exe
+C:\Users\yoshiki\Documents\GitHub\y0sh.webapp\ProCon\Paiza\Paiza_\obj\Debug\Paiza_.pdb

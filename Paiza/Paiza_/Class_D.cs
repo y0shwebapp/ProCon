@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Paiza_
 {
     #region "format"
-    static class Class_D_format
+    static class Class_D_Main
     {
         public static void Execute()
         {
             string result = string.Empty;
-            
+
             System.Console.WriteLine(result);
         }
     }
@@ -56,7 +56,7 @@ namespace Paiza_
             string result = string.Empty;
             int num = int.Parse(System.Console.ReadLine());
 
-            System.Console.WriteLine($"{7-num}");
+            System.Console.WriteLine($"{7 - num}");
         }
     }
     #endregion
@@ -67,7 +67,7 @@ namespace Paiza_
         public static void Execute()
         {
             var result = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToList();
-            
+
             Console.WriteLine(result.Max());
         }
     }
@@ -98,7 +98,7 @@ namespace Paiza_
         {
             string conv = "noaki";
             string s = Console.ReadLine().Trim();
-            
+
             Console.WriteLine(s.Replace(conv, ""));
         }
     }
@@ -142,7 +142,7 @@ namespace Paiza_
         {
             int n = int.Parse(Console.ReadLine().Trim());
             int cnt = 0;
-            for (int i = 1;i <= n; ++i)
+            for (int i = 1; i <= n; ++i)
             {
                 cnt += i;
             }
@@ -225,7 +225,7 @@ namespace Paiza_
 
 
 
-            Console.WriteLine(List[成績-1]);
+            Console.WriteLine(List[成績 - 1]);
         }
     }
     #endregion
@@ -241,7 +241,7 @@ namespace Paiza_
             foreach (var item in list)
             {
                 string s = (++cnt == 2) ? "B" : "A";
-                for (int i = 0;i < item; ++i)
+                for (int i = 0; i < item; ++i)
                 {
                     result.Append(s);
                 }
@@ -275,7 +275,7 @@ namespace Paiza_
         public static void Execute()
         {
             int[] line = Console.ReadLine().Trim().Split(' ').Select(s => int.Parse(s)).ToArray();
-            
+
             Console.WriteLine((line[0] - line[1]));
         }
     }
@@ -317,7 +317,7 @@ namespace Paiza_
                 int n = int.Parse(item);
                 string 雛人形列 = string.Empty;
 
-                for (int i = 0;i < n; ++i)
+                for (int i = 0; i < n; ++i)
                 {
                     雛人形列 = 雛人形列 + 人形q.Dequeue();
                 }
@@ -346,7 +346,7 @@ namespace Paiza_
             人形q.Enqueue("J");
 
             return 人形q;
-        } 
+        }
     }
     #endregion
 
@@ -360,9 +360,9 @@ namespace Paiza_
             int Me = int.Parse(Console.ReadLine().Trim());
 
             int cnt = 1;
-            foreach(string row in list.OrderBy(n => n))
+            foreach (string row in list.OrderBy(n => n))
             {
-                if ( int.Parse(row) > Me)
+                if (int.Parse(row) > Me)
                 {
                     break;
                 }
@@ -448,20 +448,20 @@ namespace Paiza_
             Console.WriteLine($"{S} {R}");
         }
     }
-	#endregion
+    #endregion
 
-	#region "D114:税込の価格"
-	static class Class_D_D114
-	{
-		public static void Execute()
-		{
-			var n = System.Console.ReadLine().Split(' ');
-			int par = int.Parse(n[0]);
-			int price = int.Parse(n[1]);
+    #region "D114:税込の価格"
+    static class Class_D_D114
+    {
+        public static void Execute()
+        {
+            var n = System.Console.ReadLine().Split(' ');
+            int par = int.Parse(n[0]);
+            int price = int.Parse(n[1]);
 
-			System.Console.WriteLine(price + System.Math.Floor(price * (par * 0.01)));
-		}
-	}
+            System.Console.WriteLine(price + System.Math.Floor(price * (par * 0.01)));
+        }
+    }
     #endregion
 
     #region "D098:ボーナスの計算"
@@ -471,6 +471,42 @@ namespace Paiza_
         {
             string[] i = System.Console.ReadLine().Split(' ');
             System.Console.WriteLine(int.Parse(i[0]) * int.Parse(i[1]));
+        }
+    }
+    #endregion
+
+    #region "format"
+    static class Class_D_138
+    {
+        public static void Execute()
+        {
+            int[] nw = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            var lst = new List<string>();
+            for (int i = 1; i <= nw[1]; i++)
+            {
+                lst.Add(Console.ReadLine());
+            }
+            foreach (string item in lst)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+    #endregion
+
+    #region "format"
+    static class Class_D_139
+    {
+        public static void Main()
+        {
+            int n = int.Parse(Console.ReadLine());
+            string[] l = Console.ReadLine().Split();
+            int cntG = l.Where(s => s == "G").Count();
+            int cntP = l.Where(s => s == "P").Count();
+            string ret = "Draw";
+            if (cntG != 0 && cntG < cntP) { ret = "G"; }
+            if (cntP != 0 && cntG > cntP) { ret = "P"; }
+            Console.WriteLine(ret);
         }
     }
     #endregion
